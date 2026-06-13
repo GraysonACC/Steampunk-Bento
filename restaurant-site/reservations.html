@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reservations</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="images/elegant-trim.png" alt="" class="header-decor"/>
+      <div class="header-name">The Gilded Teacup</div>
+      <img src="images/logo.png" alt="Restaurant Logo"class="header-logo"/>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="Reservations">
+      <div class="promo-image"></div>
+      <div class="card">
+          <h1>Reservations</h1>
+          <p><em>Reservations are by request only and are subject to availability.</em></p>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" maxLength=20 required><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br>
+              <label for="guests">Number of Guests:</label>
+              <input type="number" id="guests" name="guests" min="1" max="8" value="1"><br>
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required><br>
+              <label for="time">Time:</label>
+              <input type="time" id="time" name="time" required><br>
+                <fieldset>
+                  <legend>Seating Preference:</legend>
+                  <input type="radio" id="indoor" name="seating" value="indoor">
+                  <label for="indoor">Indoor</label><br>
+                  <input type="radio" id="outdoor" name="seating" value="outdoor">
+                  <label for="outdoor">Outdoor</label><br>
+                  <input type="radio" id="booth" name="seating" value="booth">
+                  <label for="booth">Booth</label><br>
+                  <input type="radio" id="no_preference" name="seating" value="no_preference" checked>
+                  <label for="no_preference">No Preference</label><br>
+              </fieldset><br>
+              <label for="notes">Additional Notes:</label><br>
+              <textarea id="notes" name="notes" rows="5" placeholder="Additional notes (dietary restrictions, etc.)"></textarea>
+              <label for="newsletter">Subscribe to our newsletter:</label>
+              <input type="checkbox" id="newsletter" name="newsletter"><br>
+              <div class="form-buttons">
+                <input type="reset" value="reset">
+                <input type="submit" value="submit">
+              </div>
+            </form>
+      </div>
+      </main>
+    <footer>&copy; 285 Restaurant Name. All rights reserved.</footer>
+  </body>
+</html>
